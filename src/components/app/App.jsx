@@ -1,5 +1,5 @@
 import React from 'react';
-import ColorSquare from '../square/ColorSquare';
+import RandomColor from '../../container/RandomColor'
 export default function App() {
-  return <ColorSquare />
+  return <RandomColor />
 }
