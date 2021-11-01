@@ -17,7 +17,16 @@ class RandomColor extends Component {
       '#B22222',
     ]
 
-    return arrOfColors[Math.floor(Math.random() * arrOfColors.length)];
+    // return arrOfColors[Math.floor(Math.random() * arrOfColors.length)];
+
+    const noDuplicates = arrOfColors[Math.floor(Math.random() * arrOfColors.length)]
+
+    if(noDuplicates !== this.state.currentColor) {
+      return noDuplicates;
+    }
+    else {
+      return 'url("https://i.dailymail.co.uk/i/pix/2016/03/18/15/324D202500000578-3498922-image-a-33_1458315465874.jpg")';
+    }
   }
 
   colorInterval = () => {
